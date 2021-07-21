@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+*{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+}
+.dividir-botoes{
+    margin-top: 30%;
+    margin-bottom: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.dividir-botoes button{
+    width: 50%;
+    padding: 2%;
+    cursor: pointer;
+    background-color: blanchedalmond;
+}
+.dividir-botoes button:hover{
+    background-color: black;
+    color: blanchedalmond;
+}
