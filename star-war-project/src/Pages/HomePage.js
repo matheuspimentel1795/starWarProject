@@ -1,6 +1,6 @@
 import React from 'react'
 import { useHistory } from 'react-router'
-import { goToFilms, goToPlanets, goToStarWarList } from '../routes/coordinator'
+import { goToFilms, goToPlanets, goToStarWarList, goToVehicles } from '../routes/coordinator'
 import styled from 'styled-components'
 import './styled.css'
 const Fundo = styled.div`
@@ -21,6 +21,7 @@ const HomePage = () =>{
         <button onClick={()=>goToStarWarList(history)} >People</button>
         <button onClick={()=>goToPlanets(history)} >Planets</button>
         <button onClick={()=>goToFilms(history)}>Films</button>
+        <button onClick={()=>goToVehicles(history)}> Vehicles</button>
         </div>
         
     </Fundo>

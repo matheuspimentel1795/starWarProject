@@ -18,3 +18,6 @@ export const goToFilms = (history) =>{
 export const goToPlanets = (history) =>{
     history.push('/planets')
 }
+export const goToVehicles = (history)=>{
+    history.push('/vehiclesPage')
+}

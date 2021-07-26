@@ -5,6 +5,7 @@ import HomePage from '../Pages/HomePage'
 import PlanetsPage from '../Pages/PlanetsPage'
 import StarWarDetail from '../Pages/StarWarDetail'
 import StarWarList from '../Pages/StarWarList'
+import VehiclesPage from '../Pages/VehiclesPage'
 
 const Router =()=>{
     return(
@@ -24,6 +25,9 @@ const Router =()=>{
                 </Route>
                 <Route exact path='/detalhes-star-war/:id'>
                     <StarWarDetail/>
+                </Route>
+                <Route exact path = '/vehiclesPage'>
+                    <VehiclesPage/>
                 </Route>
             </Switch>
         </BrowserRouter>

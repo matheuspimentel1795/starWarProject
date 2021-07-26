@@ -52,6 +52,7 @@ const FilmsPage = () =>{
             console.log(err)
         })
     },[])
+    console.log(films.sort(),'sort')
     const orderElements = () =>{
         return films
         .sort((a,b)=> filter==='a-z' ? a.title.localeCompare(b.title) : filter==='z-a'?
