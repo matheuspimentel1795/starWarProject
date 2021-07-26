@@ -34,6 +34,7 @@ const Body = styled.div`
 const StarWarList = () =>{   
     const [filter,setFilter]=useState('')
     const [starWarDetails,setStarWarDetails] = useState([])
+    
     const history = useHistory()
     const onChangeFilter=(event)=>{
         setFilter(event.target.value)
@@ -42,9 +43,11 @@ const StarWarList = () =>{
         axios.get(`${BASE_URL}/api/people/`)
         .then((res)=>{
             setStarWarDetails(res.data.results)
+            console.log('star',starWarDetails)
         })
         .catch((err)=>{
             console.log(err)
+            alert(err.data)
         })
     },[])
    
